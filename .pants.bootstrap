@@ -1,0 +1,4 @@
+
+export GIT_CURRENT_BRANCH="$(git branch --show-current)"
+export GIT_COMMIT="$(git rev-parse HEAD)"
+export GIT_REPOSITORY_ROOT="$(git rev-parse --show-superproject-working-tree --show-toplevel | head -n 1)"

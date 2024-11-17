@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "aaron-bond.better-comments",
+    "foxundermoon.shell-format",
+    "github.copilot",
+    "github.copilot-chat",
+    "oderwat.indent-rainbow",
+    "shardulm94.trailing-spaces",
+    "streetsidesoftware.code-spell-checker",
+    "timonwong.shellcheck",
+    "yzhang.markdown-all-in-one",
+    "mads-hartmann.bash-ide-vscode"
+  ],
+  "unwantedRecommendations": []
+}

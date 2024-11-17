@@ -1,0 +1,15 @@
+
+monorepo_root = local(command='git rev-parse --show-superproject-working-tree --show-toplevel | head -n 1')
+current_branch = local(command='git branch --show-current')
+
+docker_build(
+    ref='dev-common-ubuntu',
+    context=monorepo_root,
+    dockerfile='Dockerfile',
+    target='dev',
+    build_args={
+        'UBUNTU_VERSION': '24.04',
+        'USER_PASSWORD': 'devstage-sid',
+    },
+    extra_tag=current_branch
+)
